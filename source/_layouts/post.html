@@ -1,13 +1,9 @@
 ---
 layout: default
 single: true
-# page.sidebar is not necessarily set for pages - assume true if not set
 ---
 
 <div class="row">
-  {% if page.sidebar != false and site.sidebar_posn == "left" %}
-    {% include sidebar.html %}
-  {% endif %}
   <div class="{% if page.sidebar != false %}span8{% else %}span12{% endif %}">
     {% include article.html %}
     <footer>
@@ -37,8 +33,6 @@ single: true
     {% endif %}
   </div>
 
-  {% if page.sidebar != false and site.sidebar_posn != "left" %}
-    {% include sidebar.html %}
-  {% endif %}
+  {% include sidebar.html %}
 </div>
 
