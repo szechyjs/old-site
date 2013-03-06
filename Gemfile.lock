@@ -78,6 +78,7 @@ DEPENDENCIES
   heroku
   jekyll (~> 0.12)
   liquid (~> 2.3.0)
+  pygments.rb (~> 0.3.4)
   rack (~> 1.4.1)
   rake (~> 0.9)
   rb-fsevent (~> 0.9)
